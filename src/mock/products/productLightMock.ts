@@ -1,4 +1,4 @@
-import type { ProductResponse, ProductLightResponse } from "../../interfaces/productResponse";
+import type { ProductResponse, ProductLightResponse } from "../../interfaces/productResponses";
 import { productsMock } from "./productDetailsMock";
 
 
