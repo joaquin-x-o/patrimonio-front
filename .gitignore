@@ -25,6 +25,7 @@ dist-ssr
 
 # Sensitive Content
 public/logo.png
+.env
 .env.local
 .env.*.local
 !.env.example
