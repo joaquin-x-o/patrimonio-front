@@ -2,6 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 import AppSidebar from "./app/AppSidebar";
 import Topbar from "./components/layout/topbar/Topbar";
 import { SidebarProvider } from "./components/layout/sidebar/SidebarProvider";
+import Dashboard from "./pages/Dashboard";
 
 
 
@@ -17,6 +18,10 @@ function App() {
           <div className="flex flex-col flex-1 overflow-hidden">
             {/*TOPBAR*/}
             <Topbar />
+
+            <main className="flex-1 overflow-y-auto p-4">
+              <Dashboard />
+            </main>
 
           </div>
         </SidebarProvider>
