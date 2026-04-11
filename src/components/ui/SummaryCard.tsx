@@ -15,7 +15,7 @@ export function SummaryCard({ title, value, icon, bgColor, to }: Props) {
 
         // el componente Link de react-router-dom se utiliza para navegar a la ruta especificada en "to" al hacer click en la tarjeta
         <Link to={to}>
-            <div className={`${bgColor} rounded-xl p-6 text-white flex justify-between items-center shadow-lg transition-transform hover:scale-[1.02] overflow-x-hidden cursor-pointer`}>
+            <div className={`${bgColor} rounded-xl p-6 text-foreground flex justify-between items-center shadow-lg transition-transform hover:scale-[1.02] overflow-x-hidden cursor-pointer`}>
                 <div className="flex flex-col min-w-0 flex-1">
                     <span className="text-sm font-bold uppercase tracking-wider opacity-100 truncate">
                         {title}
