@@ -1,28 +1,42 @@
-Sistema de Control de Patrimonio a Escala Municipal
+# Sistema de Control de Patrimonio a Escala Municipal
 
 ## Identificación
 * **Proyecto:** Sistema de Control de Patrimonio.
 * **Integrantes:** Díaz, Santiago - Palacios, Joaquín.
 
 ## Descripción técnica
-El presente proyecto consiste en el desarrollo del frontend para una aplicación web destinada a gestionar el patrimonio de un gobierno de escala municipal. La plataforma se divide en dos entornos: una **App Client** (pública) que actúa como Landing Page informativa y catálogo de bienes, y una **App BackOffice** (privada) protegida por autenticación. Esta herramienta resuelve la falta de escalabilidad y los problemas de integridad de datos generados por el uso tradicional de planillas de cálculo, brindando a los empleados municipales un entorno digital unificado para el registro (Altas, Bajas, Modificaciones) y seguimiento del ciclo de vida de los bienes.
+El presente proyecto consiste en el desarrollo del frontend para una aplicación web destinada a gestionar el patrimonio de un gobierno de escala municipal. 
+[cite_start]El sistema se define como una plataforma de uso estrictamente interno [cite: 32][cite_start]; se trata de un *back office* diseñado de manera exclusiva para operar dentro del entorno institucional de la municipalidad[cite: 33, 35]. [cite_start]Esta herramienta busca reemplazar la gestión manual mediante planillas de cálculo, brindando a los empleados un entorno digital unificado para el registro, control de acceso, y seguimiento del ciclo de vida de los bienes patrimoniales[cite: 30, 36, 39].
 
 ## Arquitectura
-El proyecto sigue una arquitectura modular y fuertemente tipada, enfocada en la reutilización de componentes:
-* **Entorno Público (Landing Page):** Interfaz principal de acceso, estructurada con barra de navegación, Hero section, filtros y catálogo.
-* **Entorno Privado (BackOffice):** Módulos de gestión protegidos por login, incluyendo tablas de datos dinámicas y formularios para la administración del inventario.
-* **Design System (`src/components/ui`):** Implementación centralizada de estilos y componentes atómicos utilizando la biblioteca Shadcn/UI para garantizar la consistencia visual y accesibilidad en ambos entornos.
+El proyecto sigue una arquitectura modular y orientada a componentes, pensada para la escalabilidad a largo plazo:
+* **Entorno Privado:** Interfaz protegida y estructurada mediante paneles de control (*Dashboards*), vistas de gestión (tablas de datos) y formularios administrativos.
+* **Design System (Tailwind Puro):** Implementación centralizada de estilos y componentes UI (botones, inputs, tarjetas) creados desde cero utilizando clases de utilidad de Tailwind CSS para garantizar la consistencia visual sin depender de librerías externas de componentes.
 
 ## Objetivos y Tecnologías
 **Metas alcanzadas en esta fase:**
-* Maquetación completa de la Landing Page siguiendo el diseño de interfaz.
-* Implementación e integración del Design System mediante un catálogo de componentes estáticos (Showcase).
+* Maquetación de las vistas principales del MVP basadas en los prototipos de diseño.
+* Implementación e integración del Sistema de Diseño mediante un catálogo de componentes estáticos (Showcase).
 * Establecimiento de la arquitectura de archivos y configuración del tipado estricto del proyecto.
 
 **Stack Tecnológico Utilizado:**
 * **React + Vite:** Entorno base para el desarrollo rápido y optimizado del frontend.
 * **TypeScript:** Para el tipado estático seguro y escalabilidad del código.
-* **Tailwind CSS:** Framework de estilos de utilidad.
-* **Shadcn/UI:** Biblioteca de componentes accesibles y personalizables.
+* **Tailwind CSS:** Framework de estilos de utilidad para la maquetación y diseño de componentes.
 
 ## Guía de Instalación
+Sigue estos pasos para clonar y ejecutar el proyecto en tu entorno local:
+
+1. **Clonar el repositorio:**
+   (git bash)
+   git clone [https://github.com/joaquin-x-o/patrimonio-front.git](https://github.com/joaquin-x-o/patrimonio-front.git)
+
+2. **Navegar al directorio del proyecto e instalar dependencias:**
+cd patrimonio-front
+npm install
+
+3. **Variables de entorno:**
+Duplica el archivo .env.template, renómbralo a .env y completa las variables necesarias.
+
+4. **Ejecutar el servidor de desarrollo:**
+npm run dev
