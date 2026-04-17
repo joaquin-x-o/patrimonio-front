@@ -1,5 +1,5 @@
 import Sidebar from '../components/layout/sidebar/Sidebar';
-import { Package, Building2, Users, ClipboardList } from 'lucide-react';
+import { Package, Building2, Users, ClipboardList, FlaskConical } from 'lucide-react';
 
 export default function AppSidebar() {
     const LOGO = import.meta.env.VITE_LOGO;
@@ -76,7 +76,17 @@ export default function AppSidebar() {
                         { label: 'Eliminar usuario', to: '/usuario/eliminar', danger: true }
                     ]}
                 />
+                {/* PRUEBA DE COMPONENTES*/}
+                <Sidebar.Menu
+                    name='pruebas'
+                    label='Componentes'
+                    icon={FlaskConical}
+                    items={[
+                        { label: 'Ver componentes', to: '/pruebas' },
+                    ]}
+                />
             </div>
+
 
             {/* DANGER */}
             <Sidebar.DangerButton
