@@ -2,12 +2,12 @@ import { Menu, Search, UserRound } from "lucide-react";
 import { useSidebar } from "../sidebar/SidebarProvider";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Input } from "../../ui/Input";
+import { Input } from "../../ui/Input/Input";
 import { type ProductLightResponse } from "../../../interfaces/productResponses";
 import { searchProductsLight } from "../../../services/products/product.service.mock";
 import { mockProductsLight } from "../../../mock/products/productLightMock";
-import { SearchResultsList } from "../../ui/SearchResultsList";
-import { ProductSearchListFormat } from "../../features/products/ProductSearchListFormat";
+import { SearchResultsList } from "../../ui/Search/SearchResultsList";
+import { SearchListFormat } from "../../ui/Search/SearchListFormat";
 
 export default function Topbar() {
 
@@ -74,7 +74,7 @@ export default function Topbar() {
                             emptyMessage={`No se encontraron productos para "${search}"`}
                             className="absolute top-full left-0 right-0 mt-2 bg-foreground border border-slate-200 rounded-xl shadow-lg z-50 animate-in fade-in slide-in-from-top-2 duration-200"
                         >
-                            {(product: ProductLightResponse) => <ProductSearchListFormat product={product} />}
+                            {(product: ProductLightResponse) => <SearchListFormat name={product.name} code={product.productCode} />}
                         </SearchResultsList>
                     )}
                 </div>
