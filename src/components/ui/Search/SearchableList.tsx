@@ -52,7 +52,7 @@ export function SearchableList<T>({
                 onChange={(e) => setQuery(e.target.value)}
             />
 
-            {/* contenedor de la lista */}
+            {/* lista de resultados */}
             <SearchResultsList
                 items={visibleItems}
                 getKey={getKey}
@@ -60,6 +60,7 @@ export function SearchableList<T>({
                 emptyMessage={emptyMessage}
                 className="mt-2 border border-muted rounded-md"
             >
+                {/* formato de los elementos de la lista */}
                 {children}
             </SearchResultsList>
         </div>
