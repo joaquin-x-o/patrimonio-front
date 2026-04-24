@@ -1,8 +1,8 @@
-import { SummaryCard } from "../components/ui/SummaryCard";
-import { Card } from "../components/ui/Card";
-import { Bar } from "../components/ui/BarGraph";
+import { SummaryCard } from "../components/ui/Cards/SummaryCard";
+import { Card } from "../components/ui/Common/Card";
+import { Bar } from "../components/ui/DataDisplay/BarGraph";
 import { useSidebar } from "../components/layout/sidebar/SidebarProvider";
-import { Table } from "../components/ui/Table";
+import { Table } from "../components/ui/DataDisplay/Table";
 import { LinkButton } from "../components/ui/Button/LinkButton";
 import { ProductColumnNames } from "../components/features/products/ProductColumnNames";
 

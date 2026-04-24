@@ -1,4 +1,4 @@
-import { Badge } from "../../ui/Badge";
+import { Badge } from "../../ui/DataDisplay/Badge";
 import { ProductStatus } from "../../../types/product.type";
 import { statusTranslations } from "../../../utils/productDictionaries";
 
