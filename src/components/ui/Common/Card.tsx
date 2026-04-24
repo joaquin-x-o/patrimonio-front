@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { FooterLink } from "./FooterLink";
+import { FooterLink } from "../Button/FooterLink";
 
 interface Props {
     title?: string;

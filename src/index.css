@@ -2,6 +2,8 @@
 
 @theme {
 
+  /* COLORES */
+
   /* Base*/
   
   --color-background: #edf0f3; /* gris claro - fondo general app */
@@ -26,4 +28,7 @@
 
   --color-foreground: #ffffff; /* texto principal */
   --color-foreground-muted:#000000 ; /* texto secundario */
+
+  /* TIPOGRAFIA */
+  --font-sans: 'DM Sans', sans-serif;
 }
