@@ -37,6 +37,10 @@ El proyecto sigue una arquitectura modular orientada a componentes, dividiendo l
 * **TypeScript:** Para el tipado estático seguro y escalabilidad del código.
 * **Tailwind CSS:** Framework de estilos de utilidad para la maquetación y diseño de la interfaz.
 
+## Sección de componentes de prueba
+Para visualizar los componentes creados hasta el momento para el sistema, dirijase a la opción "Ver componentes" que se encuentra en
+el Sidebar de la aplicación. 
+
 ## Guía de Instalación
 Sigue estos pasos para clonar y ejecutar el proyecto en tu entorno local:
 
